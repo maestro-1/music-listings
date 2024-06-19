@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -75,8 +76,12 @@ WSGI_APPLICATION = "music_listing.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": str(os.getenv("DB_NAME")),
+        "USER": str(os.getenv("DB_USER")),
+        "PASSWORD": str(os.getenv("DB_PASSWORD")),
+        "HOST": str(os.getenv("DB_HOST")),
+        "PORT": str(os.getenv("DB_PORT")),
     }
 }
 
@@ -121,3 +126,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+OPENAI_API_KEY=str(os.getenv('OPENAI_API_KEY'))
+MUSIX_API_KEY=str(os.getenv('MUSIX_API_KEY'))
