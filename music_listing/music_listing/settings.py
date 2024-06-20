@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+import dj_database_url
 
 load_dotenv()
 
@@ -30,7 +31,9 @@ SECRET_KEY = "django-insecure-i0r$(5tr7@i%!+im6+a-23^v2_b59i4^22*z)8!ixkk(w^_=a9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["music-listings-production.up.railway.app", "localhost", "127.0.0.1"]
+
+CSRF_TRUSTED_ORIGINS = [ "https://music-listings-production.up.railway.app" ]
 
 
 # Application definition
@@ -89,6 +92,11 @@ DATABASES = {
         "PORT": str(os.getenv("DB_PORT")),
     }
 }
+
+ENVIRONMENT = str(os.getenv("ENVIRONMENT"))
+
+if ENVIRONMENT == 'production':
+    DATABASES["default"] = dj_database_url.parse(str(os.getenv('DATABASE_URL')))
 
 
 # Password validation
