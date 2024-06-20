@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Oghenemarho Onothoja"]
 readme = "README.md"
-packages = [{include = "music_listings"}]
+packages = [{include = "music_listing"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
