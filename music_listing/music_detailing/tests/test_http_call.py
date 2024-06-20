@@ -17,6 +17,7 @@ from .mocked_data import (
     full_lyrics,
     no_lyrics,
     no_song,
+    none_country_list,
 )
 
 
@@ -102,3 +103,11 @@ def test_no_lyrics_to_retrieve():
     response = retrieve_lyrics(mock_session, lyrics_params)
     mock_response.json.assert_called_once()
     assert response == None
+
+
+def test_no_countries_in_song():
+    mock_session = Mock()
+    mock_session.create.return_value = none_country_list
+
+    response = list_countries_in_song(mock_session, lyrics)
+    assert response == none_country_list.choices[0].text
