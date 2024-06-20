@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "music_detailing"
+    "music_detailing",
 ]
 
 MIDDLEWARE = [
@@ -132,5 +132,5 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-OPENAI_API_KEY=str(os.getenv('OPENAI_API_KEY'))
-MUSIX_API_KEY=str(os.getenv('MUSIX_API_KEY'))
+OPENAI_API_KEY = str(os.getenv("OPENAI_API_KEY"))
+MUSIX_API_KEY = str(os.getenv("MUSIX_API_KEY"))

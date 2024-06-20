@@ -463,5 +463,22 @@ summary = Summary(
     ]
 )
 
-
 country_list = Summary(choices=[Text("None.")])
+
+no_song = {
+    "message": {
+        "header": {
+            "status_code": 200,
+            "execute_time": 0.058937072753906,
+            "available": 0,
+        },
+        "body": {"track_list": []},
+    }
+}
+
+no_lyrics = {
+    "message": {
+        "header": {"status_code": 404, "execute_time": 0.070285081863403},
+        "body": [],
+    }
+}
