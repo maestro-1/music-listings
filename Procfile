@@ -1,1 +1,1 @@
-web: gunicorn music_listing.music_listing.wsgi
+web: gunicorn music_listing.wsgi
