@@ -17,6 +17,7 @@ pytest-mock = "^3.14.0"
 pytest = "^8.2.2"
 pytest-django = "^4.8.0"
 mock = "^5.1.0"
+dj-database-url = "^2.2.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "music_listing.settings"
