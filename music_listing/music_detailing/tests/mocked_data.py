@@ -463,7 +463,7 @@ summary = Summary(
     ]
 )
 
-country_list = Summary(choices=[Text("None.")])
+none_country_list = Summary(choices=[Text("None.")])
 
 no_song = {
     "message": {
@@ -482,3 +482,5 @@ no_lyrics = {
         "body": [],
     }
 }
+
+country_list = Summary(choices=[Text("Canada, United Kingdom")])
