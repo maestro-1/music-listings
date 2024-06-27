@@ -463,7 +463,9 @@ summary = Summary(
     ]
 )
 
+
 none_country_list = Summary(choices=[Text("None.")])
+
 
 no_song = {
     "message": {
@@ -483,4 +485,347 @@ no_lyrics = {
     }
 }
 
+
 country_list = Summary(choices=[Text("Canada, United Kingdom")])
+
+
+song_without_lyrics = {
+    "message": {
+        "header": {
+            "status_code": 200,
+            "execute_time": 0.23392295837402,
+            "available": 39
+        },
+        "body": {
+            "track_list": [
+                {
+                    "track": {
+                        "track_id": 274384144,
+                        "track_name": "Oceans (Where Feet May Fail)",
+                        "track_name_translation_list": [],
+                        "track_rating": 9,
+                        "commontrack_id": 170786976,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 61673505,
+                        "album_name": "Touch The Sky",
+                        "artist_id": 42472570,
+                        "artist_name": "Hillsong Instrumentals",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-Instrumentals/Oceans-Where-Feet-May-Fail?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-Instrumentals/Oceans-Where-Feet-May-Fail/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2024-02-04T23:12:49Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 11,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Jazz",
+                                        "music_genre_name_extended": "Jazz",
+                                        "music_genre_vanity": "Jazz"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 87099625,
+                        "track_name": "Oceans Will Part",
+                        "track_name_translation_list": [
+                            {
+                                "track_name_translation": {
+                                    "language": "u0",
+                                    "translation": "Oceans Will Part"
+                                }
+                            }
+                        ],
+                        "track_rating": 39,
+                        "commontrack_id": 48041966,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 1,
+                        "num_favourite": 147,
+                        "album_id": 21078783,
+                        "album_name": "Mighty To Save (Live)",
+                        "artist_id": 27816366,
+                        "artist_name": "Hillsong Worship",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-Worship/Oceans-Will-Part?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-Worship/Oceans-Will-Part/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2024-04-30T07:45:27Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 1098,
+                                        "music_genre_parent_id": 22,
+                                        "music_genre_name": "Christian Rock",
+                                        "music_genre_name_extended": "Christian & Gospel / Christian Rock",
+                                        "music_genre_vanity": "Christian-Gospel-Christian-Rock"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 170628803,
+                        "track_name": "Oceans - Lark Remix",
+                        "track_name_translation_list": [],
+                        "track_rating": 54,
+                        "commontrack_id": 31908023,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 32542372,
+                        "album_name": "The White Album (Remix Project)",
+                        "artist_id": 54672221,
+                        "artist_name": "Hillsong UNITED feat. TAYA & Lark",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Lark-Remix?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Lark-Remix/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2023-12-08T19:30:49Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 1094,
+                                        "music_genre_parent_id": 22,
+                                        "music_genre_name": "CCM",
+                                        "music_genre_name_extended": "Christian & Gospel / CCM",
+                                        "music_genre_vanity": "Christian-Gospel-CCM"
+                                    }
+                                },
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 22,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Christian & Gospel",
+                                        "music_genre_name_extended": "Christian & Gospel",
+                                        "music_genre_vanity": "Christian-Gospel"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 128949876,
+                        "track_name": "Oceans (Where Feet May Fail) (FreeG Remix)",
+                        "track_name_translation_list": [],
+                        "track_rating": 39,
+                        "commontrack_id": 72398963,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 25988490,
+                        "album_name": "Christian Dance Music Vol. 1 (Mixed By FreeG & Emasound)",
+                        "artist_id": 48945577,
+                        "artist_name": "Hillsong UNITED",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Where-Feet-May-Fail-FreeG-Remix?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Where-Feet-May-Fail-FreeG-Remix/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2022-11-28T21:31:48Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 17,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Dance",
+                                        "music_genre_name_extended": "Dance",
+                                        "music_genre_vanity": "Dance"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 88261876,
+                        "track_name": "Oceans (Where Feet May Fail)",
+                        "track_name_translation_list": [],
+                        "track_rating": 36,
+                        "commontrack_id": 49484187,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 1,
+                        "num_favourite": 271,
+                        "album_id": 21145573,
+                        "album_name": "Piano Lullabies (Vol. 1)",
+                        "artist_id": 166401,
+                        "artist_name": "Hillsong Kids",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-Kids/Oceans-Where-Feet-May-Fail?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-Kids/Oceans-Where-Feet-May-Fail/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2020-01-25T10:02:07Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 22,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Christian & Gospel",
+                                        "music_genre_name_extended": "Christian & Gospel",
+                                        "music_genre_vanity": "Christian-Gospel"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 171155491,
+                        "track_name": "Oceans (Son of God Remix)",
+                        "track_name_translation_list": [],
+                        "track_rating": 24,
+                        "commontrack_id": 26525883,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 32644515,
+                        "album_name": "Son of God (Original Motion Picture Soundtrack)",
+                        "artist_id": 48945577,
+                        "artist_name": "Hillsong UNITED",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Son-of-God-Remix?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Son-of-God-Remix/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2021-11-23T09:36:02Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 16,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Soundtrack",
+                                        "music_genre_name_extended": "Soundtrack",
+                                        "music_genre_vanity": "Soundtrack"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 264777622,
+                        "track_name": "Oceans (Where Feet May Fail) [Selah Sessions]",
+                        "track_name_translation_list": [],
+                        "track_rating": 9,
+                        "commontrack_id": 165333615,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 0,
+                        "has_subtitles": 0,
+                        "has_richsync": 0,
+                        "num_favourite": 0,
+                        "album_id": 59401791,
+                        "album_name": "Selah Sessions Vol. 1",
+                        "artist_id": 42472570,
+                        "artist_name": "Hillsong Instrumentals",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-Instrumentals/Oceans-Where-Feet-May-Fail-Selah-Sessions?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-Instrumentals/Oceans-Where-Feet-May-Fail-Selah-Sessions/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2023-11-01T08:13:00Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 31765155,
+                        "track_name": "Oceans (Where Feet May Fail)",
+                        "track_name_translation_list": [
+                            {
+                                "track_name_translation": {
+                                    "language": "u0",
+                                    "translation": "Oceans - Where Feet May Fail"
+                                }
+                            }
+                        ],
+                        "track_rating": 55,
+                        "commontrack_id": 162215211,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 1,
+                        "num_favourite": 13,
+                        "album_id": 11326374,
+                        "album_name": "Zion",
+                        "artist_id": 45150594,
+                        "artist_name": "Hillsong UNITED feat. TAYA",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Where-Feet-May-Fail-1?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/Oceans-Where-Feet-May-Fail-1/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2024-01-23T11:00:34Z",
+                        "primary_genres": {
+                            "music_genre_list": [
+                                {
+                                    "music_genre": {
+                                        "music_genre_id": 22,
+                                        "music_genre_parent_id": 34,
+                                        "music_genre_name": "Christian & Gospel",
+                                        "music_genre_name_extended": "Christian & Gospel",
+                                        "music_genre_vanity": "Christian-Gospel"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "track": {
+                        "track_id": 86096401,
+                        "track_name": "Oceans (Where Feet May Fail) [Lark Remix]",
+                        "track_name_translation_list": [],
+                        "track_rating": 39,
+                        "commontrack_id": 13701114,
+                        "instrumental": 0,
+                        "explicit": 0,
+                        "has_lyrics": 1,
+                        "has_subtitles": 1,
+                        "has_richsync": 0,
+                        "num_favourite": 4,
+                        "album_id": 21015755,
+                        "album_name": "Oceans EP",
+                        "artist_id": 48945577,
+                        "artist_name": "Hillsong UNITED",
+                        "track_share_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/oceans-where-feet-may-fail-lark-remix-lark-remix?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "track_edit_url": "https://www.musixmatch.com/lyrics/Hillsong-UNITED/oceans-where-feet-may-fail-lark-remix-lark-remix/edit?utm_source=application&utm_campaign=api&utm_medium=Alex%3A1409624502044",
+                        "restricted": 0,
+                        "updated_time": "2023-11-14T14:15:42Z",
+                        "primary_genres": {
+                            "music_genre_list": []
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

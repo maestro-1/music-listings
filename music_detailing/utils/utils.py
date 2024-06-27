@@ -12,10 +12,6 @@ from .http_utils import (
     retrieve_lyrics,
 )
 
-
-DUMMY_RESPONSE = 'The track "Home" by Bethel Music, with a track rating of 39 and 5 favorites, is from the album "We Will Not Be Shaken" and falls under the primary genre of "Praise & Worship" in the Christian & Gospel category.'
-
-
 @dataclass
 class SongDetail:
     summary: str
@@ -32,11 +28,11 @@ def generate_song_details(artist_name: str, title: str):
         song = retrieve_song(session, song_params)
 
         if song is None:
-            return "This song could not be found"
+            return (None, None)
 
-        track_id = song.get("track_id")
-        if track_id is None:
-            return SongDetail(summary=None, country_list=None)
+        track_id = song.get("has_lyrics")
+        if track_id == 0:
+            return (song, None)
 
         lyrics_params = {
             "track_id": track_id,
@@ -45,13 +41,17 @@ def generate_song_details(artist_name: str, title: str):
         lyrics = retrieve_lyrics(session, lyrics_params)
 
     if lyrics is None:
-        return SongDetail(summary=None, country_list=None)
+        return (song, None)
 
+    return (song, lyrics)
+
+
+def generate_song_summary(lyrics: str):
     client = OpenAI(
         api_key=settings.OPENAI_API_KEY,
     )
     song_summary = summarize_song(client.completions, lyrics)
-    country_list = list_countries_in_song(client.completions, song)
+    country_list = list_countries_in_song(client.completions, lyrics)
 
     disallowed_list = ["None"]
     if len(re.findall(r"(?=(" + "|".join(disallowed_list) + r"))", country_list)) > 0:

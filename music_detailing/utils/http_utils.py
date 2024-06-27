@@ -32,7 +32,7 @@ def summarize_song(client: OpenAI, lyrics: str):
     return summary
 
 
-def list_countries_in_song(client: OpenAI, lyrics):
+def list_countries_in_song(client: OpenAI, lyrics: str):
     prompt = f"Please list all countries mentioned in the following text otherwise return 'None':\n{lyrics}\n"
     response = client.create(
         model="gpt-3.5-turbo-instruct", prompt=prompt, max_tokens=400, temperature=0.5
